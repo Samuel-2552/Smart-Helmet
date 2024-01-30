@@ -1,1 +1,56 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+body{
+	font-family: 'Nunito', sans-serif;
+}
+header{
+	padding:10px;
+}
+main h1{
+	text-align: center;
+	color: #333333;
+	font-family: 'Oswald', sans-serif;
+}
+nav{
+	position: sticky;
+	box-sizing: border-box;
+	width: 100%;
+	text-decoration: none;
+	color: black;
+	top:0;
+}
+a{
+	padding: 10px;
+	font-size: 1em;
+	float: left;
+	text-decoration: none;
+	color: black;
+}
+i{
+	margin-top: 0%;
+}
+#last{
+	float: right;
+}
+.table{
+	clear: both;
+	display:grid;
+	justify-content: center;
+}
+tr{
+	border: 2px solid darkgrey;
+}
+td{
+	border: 1px solid darkgrey;
+	padding:12px;
+	margin:auto;
+
+}
+table{
+	border: 2.5px solid black;
+	box-sizing: border-box;
+
+}
 
