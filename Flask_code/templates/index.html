@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<script src='https://kit.fontawesome.com/54a2c781b6.js' crossorigin='anonymous'></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+	<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
+	<title>Homepage</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="">Home</a>
+			<a href="">Details</a>
+			<a href="">Features</a>
+			<a href="">Contact</a>
+			<a id = "last"><i class='fas fa-user-circle' style='font-size:31px;color:black'></i></a>
+		</nav>
+	</header>
+	<main>
+		<br><br>
+		<div id="chartContainer" style="height: 370px; width: 100%;clear: both;display: block;"></div>
 
+		<br><br><br>
+		<h1>Collisions</h1>
+		<div class = "table">
+			<table id = "tab">
+				<tr>
+					<td>Collision</td>
+					<td>Date</td>
+					<td>Time</td>
+					<td>Footage</td>
+				</tr>
+				<tr>
+					<td>Collision_1</td>
+					<td>10/12/2023</td>
+					<td>11:22:34</td>
+					<td><embed></embed></td>
+				</tr>
+
+			</table>
+		</div>
+		   <h1>Live Footage</h1>
+		    <img id="video_feed" width="640" height="480" src="{{ url_for('latest_frame') }}" alt="Video Feed">
+
+	</main>
+	<footer>
+
+	</footer>
+</body>
+</html>
